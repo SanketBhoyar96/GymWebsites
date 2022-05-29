@@ -9,110 +9,224 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 <style>
     body{
-        font-family: 'Baloo Bhai', cursive;
-        color: wheat;
-          margin: 0px;
-          padding: 0px;
-          background: url("https://cdn.pixabay.com/photo/2018/03/23/11/57/girl-3253532_960_720.jpg");
-    }
-    .left{
-        display: inline-block;
-        border: -9px solid red;
-        position: absolute;
-        left: 10px;
-        top: 3px
-
-    }
-    .left img{
-        width: 80px;
-        filter: invert(100%);
-    }
-    .left div{
-        text-align: center;
-        font-size: 10px;
-    }
-    .mid{
-        display: block;
-        width: 54%;
-        margin: 60px auto;
-        border: -9px solid green;
-    }
-
-    .right{
-        position: absolute;
-        right: 9px;
-        top: 15px;
-        border: -3px solid yellow;
-    }
-    .btn{
-        font-size: 12px;
-        margin: 0px 9px;
-        background-color: black;
-        color: white;
-        padding: 11px 16px;
-        border: 2px solid gray;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-    .btn:hover{
-        background-color: rgb(168, 148, 148);
-    }
-    div{
-        text-size-adjust: 29px;
-    }
-    .navbar{
-        display: inline-block;
-    }
-    .navbar li{
-        display: inline-block;
-        font-size: 15px;
-    }
-    .navbar li a{
-        color: rgb(243, 239, 239);
-        text-decoration: none;
-        padding: 34px 23px;
-    }
-    .navbar li a:hover, .navbar li a.active{
+    font-family: 'Baloo Bhai', cursive;
+    color: wheat;
+      margin: 0px;
+      padding: 0px;
+      background: url("imges/gymgirl02.jpg");
+      background-repeat: no-repeat;
+      
+   
     
-        text-decoration: underline;
-    }
-    .container {
-    border: -15px solid white;
-    margin: -106px -23px;
-    padding: 75px;
-    width: 64%;
-    border-radius: 80px;
+}
+.left{
+    display: inline-block;
+    border: -9px solid red;
+    position: relative;
+    left: 10px;
+    top: 3px
+
+}
+.left img{
+    width: 80px;
+    filter: invert(100%);
+}
+.left div{
+    text-align: center;
+    font-size: 10px;
+}
+.mid{
+    display: block;
+width: 54%;
+margin: 1px auto;
+padding-bottom: 50px;
+    border: -9px solid green;
+}
+
+.right{
+    position: absolute;
+    right: 9px;
+    top: 15px;
+    border: -3px solid yellow;
+}
+.btn{
+    font-size: 12px;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 11px 16px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(168, 148, 148);
+}
+div{
+    text-size-adjust: 29px;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 15px;
+}
+.navbar li a{
+    color: rgb(243, 239, 239);
+    text-decoration: none;
+    padding: 34px 23px;
+}
+.navbar li a:hover, .navbar li a.active{
+
+    text-decoration: underline;
+}
+.container {
+border: -15px solid white;
+margin: -106px 119px;
+padding: 75px;
+width: 64%;
+border-radius: 80px;
 }
 .form-group input {
-    font-family: 'Baloo Bhai', cursive;
-    text-align: center;
-    display: block;
-    width: 350px;
-    padding: 0px;
-    border: 1px solid black;
-    margin: 6px auto;
-    font-size: 20px;
-    border-radius: 8px;
+font-family: 'Baloo Bhai', cursive;
+text-align: center;
+display: block;
+width: 350px;
+padding: 0px;
+border: 1px solid black;
+margin: 6px auto;
+font-size: 20px;
+border-radius: 8px;
 }
 .container h1{
-    text-align: center;
+text-align: center;
+font-size: 30px;
 
 }
 .container button {
-    display: block;
-    width: 24%;
-    margin: auto;
+display: block;
+width: 24%;
+margin: auto;
 }
+/* Media Query */
+@media screen and (min-width: 0px) and (max-width: 673px) {
+body{
+    font-family: 'Baloo Bhai', cursive;
+    color: wheat;
+      margin: 0px;
+      padding: 0px;
+      background: url("imges/gymgirl02.jpg");
+      background-repeat: no-repeat;
+      
+   
+    
+}
+.left{
+    display: inline-block;
+    border: -9px solid red;
+    position: relative;
+    left: 10px;
+    top: 3px
+
+}
+.left img{
+    position: relative;
+    width: 70px;
+    filter: invert(100%);
+}
+.left div{
+    text-align: center;
+    font-size: 10px;
+}
+.mid{
+    display: block;
+    width: 54%;
+    margin: 60px auto;
+    border: -9px solid green;
+}
+
+.right{
+    position: absolute;
+    right: 9px;
+    top: 15px;
+    border: -3px solid yellow;
+}
+.btn{
+    font-size: 8px;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 11px 16px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(168, 148, 148);
+}
+div{
+    text-size-adjust: 29px;
+}
+.navbar{
+    display:inline-block;
+  
+}
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+}
+.navbar li a{
+    display: inline-block;
+align-items: center;
+color: rgb(243, 239, 239);
+text-decoration: none;
+padding: 0px 22px;
+}
+.navbar li a:hover, .navbar li a.active{
+
+    text-decoration: underline;
+}
+.container {
+border: -15px solid white;
+margin: -106px 30px;
+padding: 75px;
+width: 64%;
+border-radius: 80px;
+}
+.form-group input {
+font-family: 'Baloo Bhai', cursive;
+text-align: center;
+display: block;
+width: 300px;
+padding: 0px;
+border: 1px solid black;
+margin: 6px auto;
+font-size: 20px;
+border-radius: 8px;
+}
+.container h1{
+text-align: center;
+
+}
+.container button {
+display: block;
+width: 24%;
+margin: auto;
+}
+
+}
+   
 
 </style>
 <body>
     <header class="header">
     <!-- left bar for logo -->
         <div class="left">
-        <img src="img/gym.png" alt="">
+        <img src="imges/gym.jpg" alt="">
         <div>SANKET FITNESS</div>
         </div>
         <!-- mid box logo -->
