@@ -1,5 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanket Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<Style>
+    body {
+    font-family: "Baloo Bhai", sans-serif;
+    color: wheat;
+    margin: 0px;
+    padding: 0px;
+    background: url(imges/gymgirl02.webp) no-repeat center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.left {
+    margin-left: 10px;
+    /* float: left; */
+}
+
+.left img {
+    width: 80px;
+    filter: invert(100%);
+    margin-left: 10px;
+}
+
+.left div {
+    font-size: 12px;
+    width: 150px;
+}
+
+.mid {
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.right {
+    position: absolute;
+    right: 4px;
+    margin-top: 10px;
+    /* top: 15px; */
+    /* border: -3px solid yellow; */
+}
+
+.btn {
+    font-size: 12px;
+    background-color: rgb(68, 65, 65);
+    color: white;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+    margin: 10px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(97, 84, 84);
+}
+
+div {
+    text-size-adjust: 29px;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0;
+    font-size: 15px;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+}
+
+#form_inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 500px;
+    height: 300px;
+    border-radius: 40px;
+}
+
+#form_inputs>input {
+    font-size: 12px;
+    margin: 5px;
+    width: 350px;
+    height: 20px;
+    border-radius: 9px;
+    text-align: center;
+    outline: none;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: black;
+    outline: none;
+}
+
+.container h1 {
+    width: 500px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.container button {
+    width: 350px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Media Query */
+@media (max-width: 1150px) {
+    .mid {
+        margin: 1%;
+    }
+
+    .navbar li a {
+        margin: 8px;
+    }
+
+    .left img {
+        width: 60px;
+    }
+
+    .left div {
+        font-size: 10px;
+        width: 110px;
+    }
+}
+
+@media (max-width: 920px) {
+    .mid {
+        margin-left: -30px;
+    }
+
+    .navbar li a {
+        margin: 4px;
+        font-size: 12px;
+    }
+
+    .right button {
+        font-size: 12px;
+        width: 60px;
+        margin: 5px;
+        height: 20px;
+    }
+
+    #form_inputs {
+        width: 320px;
+        height: 300px;
+    }
+
+    #form_inputs>input {
+        font-size: 12px;
+        margin: 5px;
+        width: 290px;
+        height: 20px;
+
+    }
+
+    .container h1 {
+        width: 350px;
+        font-size: 18px;
+    }
+
+    .container button {
+        width: 290px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 665px) {
+    .mid {}
+
+    .navbar li a {
+        margin: 4px;
+        font-size: 12px;
+    }
+
+    .right button {
+        display: none;
+    }
+
+    .left img {
+        width: 50px;
+    }
+
+    .left div {
+        font-size: 10px;
+        width: 100px;
+    }
+
+    #form_inputs {
+        width: 300px;
+        height: 300px;
+    }
+
+    #form_inputs>input {
+        font-size: 12px;
+        margin: 3px;
+        width: 270px;
+        height: 20px;
+
+    }
+
+    .container h1 {
+        width: 350px;
+        font-size: 18px;
+    }
+
+    .container button {
+        width: 270px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 525px) {
+    .mid {
+        margin-left: -40px;
+    }
+
+    .navbar li a {
+        margin: 2px;
+        font-size: 12px;
+    }
+
+    .right button {
+        display: none;
+    }
+
+    .left img {
+        width: 40px;
+    }
+
+    .left div {
+        font-size: 8px;
+        width: 100px;
+    }
+
+    #form_inputs {
+        width: 300px;
+        height: 300px;
+    }
+
+    #form_inputs>input {
+        font-size: 12px;
+        margin: 3px;
+        width: 250px;
+        height: 20px;
+
+    }
+
+    .container h1 {
+        width: 320px;
+        font-size: 18px;
+    }
+
+    .container button {
+        width: 250px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+</Style>
+
+<body>
+    <header class="header">
+        <!-- left bar for logo -->
+        <div class="left">
+            <a href="#"><img src="imges/gym.jpg" alt=""></a>
+            <div>SANKET FITNESS</div>
+        </div>
+        <!-- mid box logo -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Bloges</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box button -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of Butibori Now</h1>
+        <form id="form">
+            <div id="form_inputs">
+                <input type="text" name="" placeholder="Enter Your Name">
+                <input type="text" name="" placeholder="Enter Your Age">
+
+                <input type="text" name="" placeholder="Enter Your Gender">
+
+                <input type="text" name="" placeholder="Enter Your Locality">
+
+                <input type="text" name="" placeholder="Enter Your Phone Number">
+
+                <input type="text" name="" placeholder="Enter Your Email Id">
+                <Button class="btn">Submit</Button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -276,3 +660,4 @@ margin: auto;
     </div>
 </body>
 </html>
+ -->
